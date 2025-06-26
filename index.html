@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌱 지구를 지키는 체크리스트</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <span class="logo-icon">🌱</span>
+          <h1>지구박사 연구소 보관함</h1>
+        </div>
+        <nav class="nav">
+          <a href="#home" class="nav-link active">홈</a>
+          <a href="#about" class="nav-link">소개</a>
+          <a href="#checklist" class="nav-link">체크리스트</a>
+          <a href="#tips" class="nav-link">팁</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- 메인 섹션 -->
+  <main>
+    <!-- 히어로 섹션 -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="hero-title">작은 실천이 큰 변화를 만듭니다 🌍</h2>
+          <p class="hero-subtitle">일상에서 할 수 있는 환경 보호 체크리스트로 지구를 지켜보세요!</p>
+          <button class="cta-button" onclick="scrollToChecklist()">체크리스트 다운받기</button>
+        </div>
+        <div class="hero-image">
+          <div class="floating-icons">
+            <span class="floating-icon">🌿</span>
+            <span class="floating-icon">🌻</span>
+            <span class="floating-icon">🦋</span>
+            <span class="floating-icon">🌳</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 소개 섹션 -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">왜 환경 보호가 중요할까요? 🤔</h2>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="card-icon">🌡️</div>
+            <h3>기후 변화</h3>
+            <p>지구 온난화로 인한 극단적인 날씨 변화와 생태계 파괴</p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">🐾</div>
+            <h3>생물 다양성</h3>
+            <p>많은 동식물이 멸종 위기에 처해있어요</p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">💧</div>
+            <h3>자원 고갈</h3>
+            <p>한정된 자원의 과도한 사용으로 인한 고갈</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 체크리스트 섹션 -->
+    <section id="checklist" class="checklist-section">
+      <div class="container">
+        <h2 class="section-title">지구 박사 강지구의 환경 체크리스트</h2>
+        <div class="download-image-box" style="text-align:center; margin-bottom:2rem;">
+          <img src="img/earth_checklist.png" alt="지구 박사 강지구의 환경 체크리스트"
+            style="max-width:320px; width:100%; border-radius:20px; box-shadow:0 4px 16px rgba(0,0,0,0.08); margin-bottom:1rem;">
+          <br>
+          <a href="img/earth_checklist.png" download="지구박사_강지구_환경체크리스트.png" class="download-btn">이미지 다운로드</a>
+        </div>
+        <!--         <div class="checklist-container">
+          <div class="checklist-categories">
+            <button class="category-btn active" data-category="daily">일상생활</button>
+            <button class="category-btn" data-category="energy">에너지 절약</button>
+            <button class="category-btn" data-category="waste">쓰레기 줄이기</button>
+            <button class="category-btn" data-category="transport">교통수단</button>
+          </div>
+
+          <div class="checklist-content">
+            <div class="checklist-category active" id="daily">
+              <div class="checklist-item">
+                <input type="checkbox" id="daily1">
+                <label for="daily1">물을 아껴서 사용하기 (양치할 때 수도꼭지 잠그기)</label>
+                <span class="impact">💧 물 절약</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" id="daily2">
+                <label for="daily2">장바구니 사용하기 (비닐봉투 거절하기)</label>
+                <span class="impact">🛍️ 플라스틱 감소</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" id="daily3">
+                <label for="daily3">텀블러 사용하기 (일회용 컵 거절하기)</label>
+                <span class="impact">☕ 쓰레기 감소</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" id="daily4">
+                <label for="daily4">로컬 식재료 구매하기</label>
+                <span class="impact">🚚 탄소 배출 감소</span>
+              </div>
+            </div>
+
+            <div class="checklist-category" id="energy">
+              <div class="checklist-item">
+                <input type="checkbox" id="energy1">
+                <label for="energy1">불필요한 전기 제품 끄기</label>
+                <span class="impact">⚡ 전력 절약</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" id="energy2">
+                <label for="energy2">LED 전구 사용하기</label>
+                <span class="impact">💡 에너지 효율</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" id="energy3">
+                <label for="energy3">에어컨/난방 온도 조절하기</label>
+                <span class="impact">🌡️ 에너지 절약</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" id="energy4">
+                <label for="energy4">태양광 충전기 사용하기</label>
+                <span class="impact">☀️ 재생에너지</span>
+              </div>
+            </div>
+
+            <div class="checklist-category" id="waste">
+              <div class="checklist-item">
+                <input type="checkbox" id="waste1">
+                <label for="waste1">분리수거 제대로 하기</label>
+                <span class="impact">♻️ 재활용</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" id="waste2">
+                <label for="waste2">음식물 쓰레기 줄이기</label>
+                <span class="impact">🍽️ 자원 절약</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" id="waste3">
+                <label for="waste3">중고품 구매/판매하기</label>
+                <span class="impact">🔄 순환 경제</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" id="waste4">
+                <label for="waste4">일회용품 사용 줄이기</label>
+                <span class="impact">🚫 플라스틱 감소</span>
+              </div>
+            </div>
+
+            <div class="checklist-category" id="transport">
+              <div class="checklist-item">
+                <input type="checkbox" id="transport1">
+                <label for="transport1">가까운 거리는 걸어가기</label>
+                <span class="impact">🚶 건강 + 환경</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" id="transport2">
+                <label for="transport2">대중교통 이용하기</label>
+                <span class="impact">🚌 탄소 배출 감소</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" id="transport3">
+                <label for="transport3">자전거 타기</label>
+                <span class="impact">🚲 무공해 이동</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" id="transport4">
+                <label for="transport4">카풀하기</label>
+                <span class="impact">🚗 효율적 이동</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress-section">
+            <div class="progress-info">
+              <span class="progress-text">진행률</span>
+              <span class="progress-percentage">0%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+            <button class="reset-btn" onclick="resetChecklist()">다시 시작</button>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- 팁 섹션 -->
+    <section id="tips" class="tips-section">
+      <div class="container">
+        <h2 class="section-title">환경 보호 팁 💡</h2>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <div class="tip-icon">🌱</div>
+            <h3>실내 식물 키우기</h3>
+            <p>공기 정화와 스트레스 해소에 도움이 됩니다.</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-icon">🧴</div>
+            <h3>친환경 세제 사용</h3>
+            <p>천연 성분의 세제로 수질 오염을 줄여보세요.</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-icon">📱</div>
+            <h3>디지털 문서 활용</h3>
+            <p>종이 사용을 줄이고 디지털로 문서를 관리하세요.</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-icon">🛒</div>
+            <h3>과대 포장 거절</h3>
+            <p>불필요한 포장재를 거절하고 최소한의 포장만 받으세요.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container" style="text-align:center;">
+      <h3 style="margin-bottom:0.5rem; color:#a8e6cf;">지구를 지키는 체크리스트</h3>
+      <p style="font-size:1rem; color:#e0f2f1; margin-bottom:0.5rem;">작은 실천이 모여 지구를 지켜요!</p>
+      <p style="font-size:0.98rem; color:#b2dfdb; margin-bottom:0.5rem;">Eco Festa in Busan</p>
+      <p style="font-size:0.95rem; color:#e0f2f1;">&copy; 2024 Save the Earth Checklist. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
